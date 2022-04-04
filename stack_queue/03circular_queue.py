@@ -20,6 +20,7 @@ class CircularQueue:
         if ((self.rear + 1)%self.size == self.front):
             print("Overflow")
             return
+        # Adding first element
         elif (self.front == -1):
             self.front = 0
             self.rear = 0
